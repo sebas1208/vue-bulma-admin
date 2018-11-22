@@ -21,5 +21,16 @@ module.exports = {
   testMatch: [
     '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
   ],
-  testURL: 'http://localhost/'
+  testURL: 'http://localhost/',
+  collectCoverage: true,
+  coverageReporters: [
+    "html",
+    "json"
+  ],
+  collectCoverageFrom: [
+    "src/components/**/*.{js,vue}",
+    "src/layout/**/*.{js,vue}",
+    "src/views/**/*.{js,vue}",
+    "!**/node_modules/**"
+  ],
 }

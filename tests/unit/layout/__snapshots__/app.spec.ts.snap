@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Test Test App 1`] = `
+<div id="app">
+  <div class="sidebar is-fullHeight" style="display: none;">
+    <div>
+      <sidebar-stub></sidebar-stub>
+    </div>
+  </div>
+  <div class="is-fullHeight main">
+    <navbar-stub></navbar-stub>
+    <div class="container">
+      <dashboard-stub></dashboard-stub>
+    </div>
+  </div>
+</div>
+`;
