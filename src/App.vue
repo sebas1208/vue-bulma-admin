@@ -2,9 +2,7 @@
     <div id="app">
         <div class="sidebar is-fullHeight" v-show="!isMobile || isMobileMenuOpen"
             :class="{'sidebar-mobile': isMobile, 'translate-left-sidebar': isMobileMenuOpen}">
-            <div>
-                <Sidebar />
-            </div>
+            <Sidebar />
         </div>
         <div class="is-fullHeight" 
             :class="{
@@ -14,7 +12,7 @@
 
             <NavBar @toggleMenu="toggleMobileMenu($event)" />
 
-            <div class="container">
+            <div class="main-content">
                 <Dashboard></Dashboard>
             </div>
         </div>
@@ -89,11 +87,6 @@ html {
     height: 100%;
 }
 
-.is-fullHeight {
-    height: 100%;
-    min-height: 100%;
-}
-
 body {
     height: 100%;
     min-height: 100%;
@@ -105,6 +98,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.is-fullHeight {
     height: 100%;
     min-height: 100%;
 }
@@ -125,6 +124,10 @@ body {
     position: relative;
     left: 250px;
     width: calc(100% - 250px);
+}
+
+.main-content {
+    margin-top: 75px;
 }
 
 .translate-left {

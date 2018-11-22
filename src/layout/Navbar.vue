@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark is-fixed-top is-spaced" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a id="burger" @click="toogleMenu()" :class="{ 'is-active': isActive }" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>

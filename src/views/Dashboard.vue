@@ -1,6 +1,25 @@
 <template>
-    <div class="home">
-        <!-- <HelloWorld></HelloWorld> -->
+    <div>
+        <div class="columns">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+            <div class="column">Column 3</div>
+        </div>
+        <div class="columns">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+            <div class="column">Column 3</div>
+        </div>
+        <div class="columns">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+            <div class="column">Column 3</div>
+        </div>
+        <div class="columns">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+            <div class="column">Column 3</div>
+        </div>
     </div>
 </template>
 
@@ -8,8 +27,7 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-    components: {
-    },
+    components: {},
 })
 export default class Dashboard extends Vue {
     constructor() {
